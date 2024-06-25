@@ -14,7 +14,7 @@ const UserUpdate = () => {
  
   const getData = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/users/${id}`, {
+      const response = await fetch(`https://it-service-app-api.onrender.com/api/admin/users/${id}`, {
         method: "GET",
         headers: {
           Authorization: authorizationToken
@@ -59,7 +59,7 @@ const UserUpdate = () => {
   const handleSubmit=async(event)=>{
     event.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/users/update/${id}`, {
+      const response = await fetch(`https://it-service-app-api.onrender.com/api/admin/users/update/${id}`, {
         method: "PATCH",
         headers: {
           Authorization: authorizationToken,
