@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { useAuth } from '../store/auth';
 
 const Navbar = () => {
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn ,user} = useAuth();
   return (
     <div >
       <nav className='navbar'>
@@ -18,7 +18,14 @@ const Navbar = () => {
             <li><NavLink to="/contact" >Contact</NavLink></li>
             <li><NavLink to="/services" >Service</NavLink></li>
             {isLoggedIn ?
-              (<li><NavLink to="/logout" >Logout</NavLink></li>)
+              (<div style={{ display: 'flex', gap: '1rem' }}>
+                <li><NavLink to="/logout" >Logout</NavLink></li>
+                {
+                  user.isAdmin ? (
+                    <li><NavLink to="/admin" >Admin</NavLink></li>
+                  ) : (<></>)
+                }
+              </div>)
               : (
                 <div style={{display:'flex',gap:'1rem'}}>
                 <li><NavLink to="/login" >Login</NavLink></li>
