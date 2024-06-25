@@ -26,7 +26,7 @@ export const AuthProvider=({children})=>{
     const userAuthetication=async()=>{
         try{
             setLoading(true); 
-            const response=await fetch('http://localhost:5000/api/data/user',{
+            const response=await fetch('https://it-service-app-api.onrender.com/api/data/user',{
                 method:"GET",
                 headers:{
                     Authorization:`Bearer ${token}`
@@ -50,7 +50,7 @@ export const AuthProvider=({children})=>{
     }
     const getAllServices=async()=>{
         try{
-            const response=await fetch('http://localhost:5000/api/data/services',{
+            const response=await fetch('https://it-service-app-api.onrender.com/api/data/services',{
                 method:"GET",
 
             });
