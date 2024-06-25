@@ -14,7 +14,7 @@ const AdminContacts = () => {
   const getALLContacts = async () => {
     try {
 
-      const response = await fetch("http://localhost:5000/api/admin/contacts", {
+      const response = await fetch("https://it-service-app-api.onrender.com/api/admin/contacts", {
         method: "GET",
         headers: {
           Authorization: authorizationToken
