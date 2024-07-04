@@ -9,7 +9,7 @@ const Navbar = () => {
     <div >
       <nav className='navbar'>
         <div className='logo-brand'>
-          Mern
+          Study Hub
         </div>
         <div>
           <ul >
