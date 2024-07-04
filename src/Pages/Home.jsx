@@ -8,11 +8,11 @@ const Home = () => {
     <div className='home'>
       <div className='home-section'>
         <div><p>We are the World Best IT Company</p>
-        <h1>Welcome to Thapa Technical</h1></div>
+        <h1>Welcome to Study Hub</h1></div>
         
         <p>
           Are you ready to take your business to the next level with
-          cutting-edge IT solutions? Look no further! At Thapa Technical,
+          cutting-edge IT solutions? Look no further! At Study Hub,
           we specialize in providing innovative IT services and solutions
           tailored to meet your unique needs.
         </p>
